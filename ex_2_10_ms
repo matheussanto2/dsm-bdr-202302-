@@ -1,0 +1,30 @@
+class FibonacciSequence {
+  private memoizationMap: Map<number, number> = new Map();
+
+  calculate(n: number): number {
+    if (this.memoizationMap.has(n)) {
+      // Se o valor já foi calculado, retorna-o a partir do mapa de memoização
+      return this.memoizationMap.get(n)!;
+    } else if (n <= 2) {
+      // Condição de parada para n = 1 e n = 2
+      return 1;
+    } else {
+      // Cálculo recursivo dos termos da sequência
+      const result = this.calculate(n - 1) + this.calculate(n - 2);
+      // Armazena o resultado no mapa de memoização para reutilização
+      this.memoizationMap.set(n, result);
+      return result;
+    }
+  }
+
+  printSequence(terms: number): void {
+    for (let i = 1; i <= terms; i++) {
+      const fibTerm = this.calculate(i);
+      console.log(`Termo ${i}: ${fibTerm}`);
+    }
+  }
+}
+
+// Exemplo de uso
+const fibSequence = new FibonacciSequence();
+fibSequence.printSequence(10);

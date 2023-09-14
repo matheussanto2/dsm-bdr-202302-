@@ -1,0 +1,16 @@
+a)
+   1. Alguns usuários acessam o sistema após as 23h.
+   2. Todos os acessos após as 23h têm baixo tempo de espera.
+   
+ 
+   Dado que alguns usuários acessam o sistema após as 23h e todos os acessos após as 23h têm baixo tempo de espera, podemos concluir que pelo menos alguns usuários têm baixo tempo de espera.
+
+b) 
+   Todos os objetos marcados com etiquetas (TxyE) no estoque foram entregues pela transportadora Txy.
+
+   Se um objeto tem uma etiqueta (TxyE), então ele foi entregue pela transportadora Txy.
+
+c)
+   O fato do log do sistema apresentar um grande volume de dados registrados significa que houve um grande número de tentativas de violação de segurança.
+
+   Quando o log do sistema registra um grande volume de dados, isso indica a ocorrência de um grande número de tentativas de violação de segurança.
